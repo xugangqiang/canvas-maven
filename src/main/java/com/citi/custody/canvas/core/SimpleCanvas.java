@@ -2,10 +2,7 @@ package com.citi.custody.canvas.core;
 
 import com.citi.custody.canvas.exception.OnlyVerticalOrHorizontalLineSupportedException;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
 
 public class SimpleCanvas extends AbstractCanvas {
 

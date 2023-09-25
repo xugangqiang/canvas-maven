@@ -1,6 +1,5 @@
 package com.citi.custody.canvas.command;
 
-import com.citi.custody.canvas.core.Coordinate;
 import com.citi.custody.canvas.core.ICanvas;
 
 public class QuitCommand extends AbstractCanvasOperationCommand {

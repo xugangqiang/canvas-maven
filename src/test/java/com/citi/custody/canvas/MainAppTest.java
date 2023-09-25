@@ -6,9 +6,17 @@ import org.junit.Test;
 
 import java.util.List;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.*;
 
 public class MainAppTest {
+
+    @Test
+    public void testProcessQuitCommand() {
+        assertFalse(MainApp.isShouldQuit());
+
+        MainApp.processCommand("Q");
+        assertTrue(MainApp.isShouldQuit());
+    }
 
     @Test
     public void testProvidedExample() {

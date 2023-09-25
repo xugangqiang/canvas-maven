@@ -13,13 +13,17 @@ public final class CanvasCommandHelper {
     private static final Map<String, Class<CanvasOperationCommand>> REGISTER = new HashMap<>();
 
     static {
-        for (CanvasCommandTypeEnum cmd  : CanvasCommandTypeEnum.values()) {
-            REGISTER.put(cmd.name(), cmd.getCommandClass());
-        }
+        registerCommand();
     }
 
     private CanvasCommandHelper() {
 
+    }
+
+    private static void registerCommand(){
+        for (CanvasCommandTypeEnum cmd  : CanvasCommandTypeEnum.values()) {
+            REGISTER.put(cmd.name(), cmd.getCommandClass());
+        }
     }
 
     public static final Optional<CanvasOperationCommand> getCommand(String[] args) {

@@ -11,6 +11,16 @@ import static org.junit.Assert.*;
 public class CanvasCommandHelperTest {
 
     @Test
+    public void testRegisterCommand() {
+        try {
+            // force static initializer, registerCommand
+            Class clz = CanvasCommandHelper.class;
+        } catch (Exception e) {
+            fail("should not ge here");
+        }
+    }
+
+    @Test
     public void testInvalidCommand() {
         String[] args = {"c", "10", "2"};
         Optional<CanvasOperationCommand> cmd = CanvasCommandHelper.getCommand(args);

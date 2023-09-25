@@ -2,8 +2,8 @@ package com.citi.custody.canvas.command;
 
 import com.citi.custody.canvas.core.Coordinate;
 import com.citi.custody.canvas.exception.CommandCreationException;
-import com.citi.custody.canvas.exception.ParameterMissingException;
 import com.citi.custody.canvas.exception.IllegalCoordinateException;
+import com.citi.custody.canvas.exception.ParameterMissingException;
 
 public abstract class AbstractCanvasOperationCommand implements CanvasOperationCommand {
 
