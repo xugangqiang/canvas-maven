@@ -1,6 +1,5 @@
 package com.citi.custody.canvas;
 
-import com.citi.custody.canvas.command.CreateCanvasCommand;
 import com.citi.custody.canvas.core.ICanvas;
 import org.junit.Test;
 

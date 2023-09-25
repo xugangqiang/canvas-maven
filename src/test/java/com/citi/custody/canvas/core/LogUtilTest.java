@@ -1,9 +1,8 @@
 package com.citi.custody.canvas.core;
 
-import com.citi.custody.canvas.core.LogUtil;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.fail;
 
 public class LogUtilTest {
 

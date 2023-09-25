@@ -1,9 +1,7 @@
 package com.citi.custody.canvas.command;
 
-import com.citi.custody.canvas.core.ICanvas;
 import org.junit.Test;
 
-import java.util.List;
 import java.util.Optional;
 
 import static org.junit.Assert.*;

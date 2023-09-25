@@ -2,7 +2,10 @@ package com.citi.custody.canvas.command;
 
 import com.citi.custody.canvas.core.AbstractCanvas;
 import com.citi.custody.canvas.core.SimpleCanvas;
-import com.citi.custody.canvas.exception.*;
+import com.citi.custody.canvas.exception.CommandCreationException;
+import com.citi.custody.canvas.exception.CoordinateOutOfBoundException;
+import com.citi.custody.canvas.exception.IllegalCoordinateException;
+import com.citi.custody.canvas.exception.ParameterMissingException;
 import org.junit.Test;
 
 import java.util.List;

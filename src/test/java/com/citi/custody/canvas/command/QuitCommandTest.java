@@ -2,11 +2,7 @@ package com.citi.custody.canvas.command;
 
 import com.citi.custody.canvas.core.ICanvas;
 import com.citi.custody.canvas.exception.CommandCreationException;
-import com.citi.custody.canvas.exception.IllegalCanvasBoundaryException;
-import com.citi.custody.canvas.exception.ParameterMissingException;
 import org.junit.Test;
-
-import java.util.List;
 
 import static org.junit.Assert.*;
 
