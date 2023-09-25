@@ -20,19 +20,19 @@ public class MainAppTest {
     @Test
     public void testProvidedExample() {
         String args = "C 20 4";
-        ICanvas canvas = MainApp.processCommand(args);
+        MainApp.processCommand(args);
 
         args = "L 1 2 6 2";
-        canvas = MainApp.processCommand(args);
+        MainApp.processCommand(args);
 
         args = "L 1 2 6 2";
-        canvas = MainApp.processCommand(args);
+        MainApp.processCommand(args);
 
         args = "L 6 3 6 4";
-        canvas = MainApp.processCommand(args);
+        MainApp.processCommand(args);
 
         args = "R 16 1 20 3";
-        canvas = MainApp.processCommand(args);
+        ICanvas canvas = MainApp.processCommand(args);
 
         List<String> view = canvas.getCanvasView();
         for (int i=1; i<=6;i++) {
@@ -53,10 +53,10 @@ public class MainAppTest {
     @Test
     public void testDrawRectangle() {
         String args = "C 17 8";
-        ICanvas canvas = MainApp.processCommand(args);
+        MainApp.processCommand(args);
 
         args = "R 1 1 17 7";
-        canvas = MainApp.processCommand(args);
+        ICanvas canvas = MainApp.processCommand(args);
         List<String> view = canvas.getCanvasView();
 
         for (int i=1; i<=17;i++) {
@@ -74,10 +74,10 @@ public class MainAppTest {
     @Test
     public void testDrawLine() {
         String args = "C 17 2";
-        ICanvas canvas = MainApp.processCommand(args);
+        MainApp.processCommand(args);
 
         args = "L 1 1 17 1";
-        canvas = MainApp.processCommand(args);
+        ICanvas canvas =  MainApp.processCommand(args);
         List<String> view = canvas.getCanvasView();
 
         for (int i=1; i<=17;i++) {

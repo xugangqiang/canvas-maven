@@ -1,6 +1,5 @@
 package com.citi.custody.canvas.command;
 
-import com.citi.custody.canvas.core.ICanvas;
 import com.citi.custody.canvas.exception.CommandCreationException;
 import org.junit.Test;
 
@@ -19,7 +18,7 @@ public class QuitCommandTest {
     public void testCreateCanvas() {
         String[] args = {"Q"};
         QuitCommand command = new QuitCommand(args);
-        ICanvas canvas = command.execute(null);
+        command.execute(null);
 
         try {
             args = new String[] {};

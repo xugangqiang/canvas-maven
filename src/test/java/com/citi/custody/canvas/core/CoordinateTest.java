@@ -35,14 +35,14 @@ public class CoordinateTest {
         assertEquals(20, coordinate.getY());
 
         try {
-            coordinate = new Coordinate(-10,20);
+            new Coordinate(-10,20);
             fail("should not go here");
         } catch (Exception e) {
             assertTrue(IllegalCoordinateException.class.isInstance(e));
         }
 
         try {
-            coordinate = new Coordinate(10,-20);
+            new Coordinate(10,-20);
             fail("should not go here");
         } catch (Exception e) {
             assertTrue(IllegalCoordinateException.class.isInstance(e));

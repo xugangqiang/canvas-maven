@@ -1,6 +1,5 @@
 package com.citi.custody.canvas.command;
 
-import com.citi.custody.canvas.core.AbstractCanvas;
 import com.citi.custody.canvas.core.Coordinate;
 import com.citi.custody.canvas.core.ICanvas;
 import com.citi.custody.canvas.core.SimpleCanvas;
@@ -14,7 +13,7 @@ public class AbstractCanvasOperationCommandTest {
 
     @Test
     public void testValidateParameterSize() {
-        AbstractCanvas canvas = new SimpleCanvas(20, 4);
+        new SimpleCanvas(20, 4);
         String[] args = {"L", "1", "2", "6", "2"};
         try {
             new AbstractCanvasOperationCommand("L", args) {
@@ -70,7 +69,7 @@ public class AbstractCanvasOperationCommandTest {
 
     @Test
     public void testGetCoordinateFromParameter() {
-        AbstractCanvas canvas = new SimpleCanvas(20, 4);
+        new SimpleCanvas(20, 4);
         String[] args = {"L", "1", "2", "6", "2"};
         AbstractCanvasOperationCommand command = new AbstractCanvasOperationCommand("L", args) {
             @Override
