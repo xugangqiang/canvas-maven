@@ -34,6 +34,4 @@ R 16 1 20 3
 Q
 receive quit command, exit...
 
-2. For sequence diagram, see uml/seq-canvas.pdf
-
-3. For class diagram, see uml/class-canvas.pdf
+2. For class diagram, see uml/class-canvas.pdf
