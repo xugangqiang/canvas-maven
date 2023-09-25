@@ -25,7 +25,7 @@ public final class CanvasCommandHelper {
         }
     }
 
-    public static final Optional<CanvasOperationCommand> getCommand(String[] args) {
+    public static Optional<CanvasOperationCommand> getCommand(String[] args) {
         if (args == null || args.length == 0) {
             return Optional.empty();
         }
