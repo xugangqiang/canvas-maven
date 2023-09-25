@@ -14,7 +14,7 @@ public class CanvasCommandHelperTest {
     public void testRegisterCommand() {
         try {
             // force static initializer, registerCommand
-            Class clz = CanvasCommandHelper.class;
+            Class<CanvasCommandHelper> clz = CanvasCommandHelper.class;
         } catch (Exception e) {
             fail("should not ge here");
         }

@@ -5,14 +5,14 @@ public enum CanvasCommandTypeEnum {
 
     private final String description;
 
-    private final Class<CanvasOperationCommand> commandClass;
+    private final Class<? extends CanvasOperationCommand> commandClass;
 
-    CanvasCommandTypeEnum(String str, Class clz) {
+    CanvasCommandTypeEnum(String str, Class<? extends CanvasOperationCommand> clz) {
         description = str;
         commandClass = clz;
     }
 
-    public Class<CanvasOperationCommand> getCommandClass() {
+    public Class getCommandClass() {
         return commandClass;
     }
 }

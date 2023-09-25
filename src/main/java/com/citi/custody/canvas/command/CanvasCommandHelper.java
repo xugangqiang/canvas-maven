@@ -1,6 +1,5 @@
 package com.citi.custody.canvas.command;
 
-import com.citi.custody.canvas.core.LogUtil;
 import com.citi.custody.canvas.exception.CommandCreationException;
 
 import java.lang.reflect.Constructor;
@@ -28,13 +27,11 @@ public final class CanvasCommandHelper {
 
     public static final Optional<CanvasOperationCommand> getCommand(String[] args) {
         if (args == null || args.length == 0) {
-            LogUtil.log("no command provided");
             return Optional.empty();
         }
         String cmdString = args[0];
         Class<CanvasOperationCommand> clz = REGISTER.get(cmdString);
         if (clz == null) {
-            LogUtil.log("invalid command:" + cmdString);
             return Optional.empty();
         }
         try {

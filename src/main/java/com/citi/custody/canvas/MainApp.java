@@ -33,7 +33,6 @@ public class MainApp {
             } catch (Exception e) {
                 String msg = String.format("%s, message:%s", e.getClass().getCanonicalName(), e.getMessage());
                 LogUtil.log(msg);
-                LogUtil.log("Please type correct command");
             }
         }
     }
@@ -61,6 +60,9 @@ public class MainApp {
     }
 
     public static void showCanvas(ICanvas canvas) {
+        if(canvas == null) {
+            return;
+        }
         List<String> view = canvas.getCanvasView();
         for (String str : view) {
             System.out.println(str);
